@@ -20,4 +20,14 @@ def test_divide_fun():
       num = 1 / 0
 
     assert 'division by zero' in str(e.value)
-    
+#---------------------------------------
+# fun to handle parametrized
+#---------------------------------------    
+products = [
+    (2,3,6),
+    (0,99,0)
+]
+@pytest.mark.parametrize('a,b,product',products)
+def test_multiple_fun(a,b,product):
+    assert a*b==product
+ 
