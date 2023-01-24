@@ -30,3 +30,7 @@ products = [
 @pytest.mark.parametrize('a,b,product',products)
 def test_multiple_fun(a,b,product):
     assert a*b==product
+
+#----------------------------------------
+
+
