@@ -218,4 +218,147 @@
 
 # print("Perimeter: " + str(p))
 # print("Area: " + str(a))
+# def test(func, arg):
+#       return func(func(arg))
+
+# def mult(x):
+#   return x * x
+
+# print(test(mult, 2))
+# def my_func(f, arg):
+#       return f(arg)
+
+# my_func(lambda x: 2*x*x, 5)
+#!/bin/python
+
+# def avg(*x):
+#     return sum(x)/len(x)
+     
+# def numCells(grid):
+#     # Write your code here
+#     x=len(grid)
+#     y=len(grid[0])
+#     cell=0
+#     red_flag=1
+#     for i in range(x):
+#         for k in range(y):
+#             current_element=grid[i][k]
+#             for ii in range(max(0,i-1),min(x,i+2)):
+#                 for kk in range(max(0,k-1),min(y,k+2)):
+#                     if (ii,kk) != (i,k) and current_element <=grid[ii][kk]:
+#                         red_flag=0
+#                         break
+#                 if red_flag==0:
+#                     break
+#                 else:
+#                     cell+=1
+#     return cell
+
+# def find_dominant_cells(grid):
+#     rows = len(grid)
+#     cols = len(grid[0])
+#     dominant_cells = []
+
+#     for i in range(rows):
+#         for j in range(cols):
+#             cell = grid[i][j]
+#             is_dominant = True
+
+#             # Check top neighbor
+#             if i > 0 and cell <= grid[i-1][j]:
+#                 is_dominant = False
+
+#             # Check bottom neighbor
+#             if i < rows-1 and cell <= grid[i+1][j]:
+#                 is_dominant = False
+
+#             # Check left neighbor
+#             if j > 0 and cell <= grid[i][j-1]:
+#                 is_dominant = False
+
+#             # Check right neighbor
+#             if j < cols-1 and cell <= grid[i][j+1]:
+#                 is_dominant = False
+
+#             # Check top-left neighbor
+#             if i > 0 and j > 0 and cell <= grid[i-1][j-1]:
+#                 is_dominant = False
+
+#             # Check top-right neighbor
+#             if i > 0 and j < cols-1 and cell <= grid[i-1][j+1]:
+#                 is_dominant = False
+
+#             # Check bottom-left neighbor
+#             if i < rows-1 and j > 0 and cell <= grid[i+1][j-1]:
+#                 is_dominant = False
+
+#             # Check bottom-right neighbor
+#             if i < rows-1 and j < cols-1 and cell <= grid[i+1][j+1]:
+#                 is_dominant = False
+
+#             # Add dominant cell to the result list
+#             if is_dominant:
+#                 dominant_cells.append(cell)
+
+#     return len(dominant_cells)
+# grid = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+
+# dominant_cells = find_dominant_cells(grid)
+# print(dominant_cells)
+
+
+# if __name__ == '__main__':
+#     n = int(input().strip())
+
+#     if n%2==0 and n in range(2,5):
+#         print("Not Weird")
+#     elif n%2!=0:
+#         print("Weird")
+#     elif n%2==0 and n in range(6,20):
+#         print("Weird")
+#     elif n%2==0 and n>20:
+#         print("Not Weird")
+
+
+#can you adjust this code to know if this a leap year or not and covering all cases
+# def is_leap(year):
+#     leap = False
+
+#     # Write your logic here
+#     if year % 4 == 0:
+#         if year % 100 == 0:
+#             if year % 400 == 0:
+#                 leap = True
+#             else:
+#                 leap = False
+#         else:
+#             leap = True
+#     else:
+#         leap = False
+
+#     return leap
+
+# year = int(input())
+# print(is_leap(year))
+
+'''You are given a string s consisting only of digits 0-9, commas ,, and dots .
+
+Your task is to complete the regex_pattern defined below, which will be used to re.split() all of the , and . symbols in s .
+
+It’s guaranteed that every comma and every dot in s is preceeded and followed by a digit.'''
+# regex_pattern = r"[,.]"	# Do not delete 'r'.
+
+# import re
+# print("\n".join(re.split(regex_pattern, input())))
+# def find_max(nums):
+#     max_num = float("-inf") # smaller than all other numbers
+#     for num in nums:
+#         if num > max_num:
+#           # (Fill in the missing line here)
+#     return max_num
+
 
