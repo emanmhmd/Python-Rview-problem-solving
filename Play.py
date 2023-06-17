@@ -362,3 +362,55 @@ It’s guaranteed that every comma and every dot in s is preceeded and followed 
 #     return max_num
 
 
+'''The yield statement is used to define a generator,
+replacing the return of a function to provide 
+a result to its caller without destroying local variables.
+-----------------------------------------------------------
+In short, generators allow you to declare 
+a function that behaves like an iterator,
+i.e. it can be used in a for loop.
+'''
+# def countdown():
+#     i=5
+#     while i > 0:
+#         yield i
+#         i -= 1
+
+# for i in countdown():
+#     print(i)
+
+# def numbers(x):
+#       for i in range(x):
+#         if i % 2 == 0:
+#             yield i
+
+# print(list(numbers(11)))
+
+
+
+# def isPrime(x):
+#     if x < 2:
+#         return False
+#     elif x == 2:
+#         return True  
+#     for n in range(2, x):
+#         if x % n ==0:
+#             return False
+#     return True
+# def primeGenerator(a, b):
+#     #your code goes here
+#     for i in range(a,b):
+#         if isPrime(i):
+#             yield i
+# f = int(input())
+# t = int(input())
+# print(list(primeGenerator(f, t)))
+
+# def make_word():
+#     word = ""
+#     for ch in "spam":
+#         word +=ch
+#         yield word
+
+# print(list(make_word()))
+######################################
