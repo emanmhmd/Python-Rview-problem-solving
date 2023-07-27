@@ -2,4 +2,4 @@
 
 
 this project contains some examples ,
-i've done during studying test automation
+i've done during studying , reveiwing python & test automation
